@@ -7,13 +7,10 @@ const router = express.Router();
 
 // Route operations
 // Read operation /api/get
-/**
- * @api {get} /test
-*/
-router.get('/', getTests);
-router.get('/:id', getTest);
-router.post('/', createTest);
-router.put('/:id', updateTest);
-router.delete('/:id', deleteTest);
+router.get('/api/test', getTests);
+router.get('/api/test/:id', getTest);
+router.post('/api/test', createTest);
+router.put('/api/test/:id', updateTest);
+router.delete('/api/test/:id', deleteTest);
 
 module.exports = router;
