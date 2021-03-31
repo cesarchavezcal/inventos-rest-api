@@ -1,6 +1,6 @@
 // Database Model
 const Test = require("../models/test.model");
-
+// CRUD Controllers
 const getTests = async (req, res) => {
     try {
         const tests = await Test.find();
