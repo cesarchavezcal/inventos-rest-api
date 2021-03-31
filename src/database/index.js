@@ -18,6 +18,7 @@ module.exports = async () => {
             useCreateIndex: true
         });
     } catch (error) {
+        // eslint-disable-next-line no-console
         console.log(error);
         process.exit(1);
     }
