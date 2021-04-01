@@ -15,6 +15,7 @@ const database = require('./src/database');
 const testRoutes = require('./src/routes/test.route');
 const authRoutes = require('./src/routes/auth.route');
 const specialRoutes = require('./src/routes/protected.route');
+const authObjRoutes = require('./src/routes/authObj.route');
 
 // Connecting to database
 database().then(() => {
@@ -35,6 +36,7 @@ app.get('/', (req, res) => { res.sendFile(path.join(__dirname + '/src/index.html
 app.use(testRoutes);
 app.use(authRoutes);
 app.use(specialRoutes);
+app.use(authObjRoutes);
 // Running server app
 app.listen(config.port, () => {
     // eslint-disable-next-line no-console
