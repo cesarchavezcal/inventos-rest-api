@@ -6,4 +6,5 @@ module.exports = {
     dbPassword: process.env.DB_PASSWORD,
     dbHost: process.env.DB_HOST,
     dbName: process.env.DB_NAME,
+    jwtSecret: process.env.SECRET_WORD
 }
